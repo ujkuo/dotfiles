@@ -10,4 +10,4 @@
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "oh-my-tmux"]
 	path = oh-my-tmux
-	url = https://github.com/WildfootW/oh-my-tmux.git
+	url = https://github.com/ujkuo/oh-my-tmux.git
