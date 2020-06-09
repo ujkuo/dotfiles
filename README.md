@@ -58,6 +58,9 @@ for the correct theme th display in terminal
 ## tmux
 [oh-my-tmux](https://github.com/gpakosz/.tmux)
 
+# TODO
+install.sh: fix link file to home directory
+
 # Troubleshooting
 ## Manually install ssh key of GitHub
 ```

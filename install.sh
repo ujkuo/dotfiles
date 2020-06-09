@@ -164,6 +164,7 @@ git submodule update
 # clone some custom plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions $SCRIPTPATH/oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $SCRIPTPATH/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/bhilburn/powerlevel9k.git $SCRIPTPATH/oh-my-zsh/custom/themes/powerlevel9k
 
 #set git and GitHub SSH Key
 set_git_environment_settings

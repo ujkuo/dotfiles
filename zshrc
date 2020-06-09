@@ -7,7 +7,12 @@ export ZSH=$DOTFILES/oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="alanpeabody"
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+## pwowerlevel9k
+# command line 左邊想顯示的內容
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir) # <= left prompt 設了 "dir"
+# command line 右邊想顯示的內容
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time) # <= right prompt 設了 "time"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

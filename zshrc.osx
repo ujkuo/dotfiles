@@ -15,10 +15,6 @@ plugins=(osx $plugins)
 OSX_NOTIFICATION='display notification "Task Complete!" with title "iTerm2" '
 alias alert='echo $OSX_NOTIFICATION | osascript'
 
-# tmux
-ZSH_TMUX_AUTOSTART=false
-plugins=(tmux $plugins)
-
 # Haskell
 if [ -x /usr/local/bin/ghci ]; then
     export PATH="$HOME/Library/Haskell/bin:$PATH"
@@ -64,3 +60,9 @@ function _train()
 if ( command -v sl > /dev/null 2>&1 ); then
     alias train=_train
 fi
+
+# tmux
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOQUIT=false
+plugins=(tmux $plugins)
+
