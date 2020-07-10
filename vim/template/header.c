@@ -1,8 +1,8 @@
 /*
  * Version 
- * Author: WildfootW
- * GitHub: github.com/WildfootW
- * Copyleft (C) 2020 WildfootW all rights reversed
+ * Author: ujkuo
+ * GitHub: github.com/ujkuo
+ * Copyleft (C) 2020 ujkuo all rights reversed
  *
  */
 
