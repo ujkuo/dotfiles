@@ -1,4 +1,3 @@
-// Wrong Answer
 
 #include <iostream>
 #include <ctime>

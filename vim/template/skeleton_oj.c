@@ -1,7 +1,6 @@
 //C11
-//  WildfootW 2020
-//  https://github.com/WildfootW
-//  Wrong Answer
+//  ujkuo 2020
+//  https://github.com/ujkuo
 
 #include <stdio.h>
 #include <time.h>

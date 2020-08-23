@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
 #   Version 1.0
-#   Author: WildfootW
-#   GitHub: github.com/WildfootW
+#   Author: ujkuo
+#   GitHub: github.com/ujkuo
 #   Copyleft (C) 2020 WildfootW All rights reversed.
 #
 from pwn import *
