@@ -8,6 +8,7 @@ export ZSH=$DOTFILES/oh-my-zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="alanpeabody"
 ZSH_THEME="powerlevel9k/powerlevel9k"
+DEFAULT_USER="$USER"
 ## pwowerlevel9k
 # command line 左邊想顯示的內容
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir) # <= left prompt 設了 "dir"

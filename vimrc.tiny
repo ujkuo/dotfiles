@@ -131,6 +131,9 @@ highlight Search cterm=none ctermbg=green ctermfg=black
 highlight NonText cterm=none ctermbg=none
 highlight VertSplit ctermbg=none ctermfg=gray
 highlight SignColumn ctermbg=none
+highlight Type ctermbg=none ctermfg=yellow
+highlight Structure ctermbg=none ctermfg=123
+"highlight string ctermbg=none ctermfg=171
 
 "Airline
 set laststatus=2
