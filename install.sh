@@ -135,11 +135,12 @@ function setup_GitHub_SSH_Key()
 echo ""
 echo "  +------------------------------------------------+"
 echo "  |                                                |\\"
-echo "  |       WildfootW's dotfile install script       | \\"
+echo "  |        ujkuo's dotfile install script          | \\"
 echo "  |                                                | |"
 echo "  +------------------------------------------------+ |"
 echo "   \\______________________________________________\\|"
 echo ""
+echo "fork from WildfooW, thanks bro!"
 echo "copy from inndy, thank you Inndy!"
 echo "fork from azdkj532, thank you Squirrel!"
 
