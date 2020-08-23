@@ -1,8 +1,8 @@
 #!/bin/bash
 #   Version 
-#   Author: WildfootW
-#   GitHub: github.com/Wildfoot
-#   Copyright (C) 2018 WildfootW All rights reserved.
+#   Author: ujkuo
+#   GitHub: github.com/ujkuo
+#   Copyright (C) 2020 ujkuo. All rights reserved.
 #
 
 mkdir -p ~/Workplace
