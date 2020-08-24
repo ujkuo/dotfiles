@@ -79,6 +79,9 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 
+export IPINFO_TOKEN="your-ipinfo-token"
+export OWM_TOKEN="your-OpenWeatherMap-token"
+
 # Zsh configuration
 setopt correct
 
