@@ -39,8 +39,17 @@ function initial()
 #        echo "Your distribution havn't been support yet. exit.."
 #        exit 1
 #    fi
-    current_user=$USER
-    home_directory=$HOME
+    echo "Current Username: ($USER)"
+    read current_user
+    if [ "$current_user" == "" ]; then
+        current_user=$USER
+    fi
+
+    echo "Home Directory: ($HOME)"
+    read home_directory
+    if [ "home_directory" == "" ]; then
+        home_directory=$HOME
+    fi
 }
 
 function install_file()
@@ -94,6 +103,7 @@ function set_git_environment_settings()
     git config --global alias.co commit
     git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
     git config --global push.default simple
+    git config --global pull.rebase false
     git config --global core.excludesfile ~/dotfiles/git/.gitignore # global gitignore
 }
 
