@@ -11,6 +11,14 @@ alias m8="mtr 8.8.8.8"
 fpath=(/usr/local/share/zsh-completions $fpath)
 plugins=(osx $plugins)
 
+# GIT ALIASES
+alias br='branch'
+alias pull='branch pull'
+alias push='branch push'
+alias st='git status -s'
+alias cm='git commit -a -m'
+
+
 # Notification
 OSX_NOTIFICATION='display notification "Task Complete!" with title "iTerm2" '
 alias alert='echo $OSX_NOTIFICATION | osascript'
@@ -42,7 +50,7 @@ fi
 
 function _train()
 {
-    while true; do;
+    while true; do
         case $(( $RANDOM % 8 )) in
             0 ) sl;;
             1 ) sl -a;;
@@ -60,6 +68,8 @@ function _train()
 if ( command -v sl > /dev/null 2>&1 ); then
     alias train=_train
 fi
+
+
 
 # tmux
 ZSH_TMUX_AUTOSTART=true

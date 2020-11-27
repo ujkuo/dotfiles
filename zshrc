@@ -1,18 +1,24 @@
 # Path to your oh-my-zsh installation.
 export DOTFILES=$HOME/dotfiles
 export ZSH=$DOTFILES/oh-my-zsh
+#export PATH = "/usr/local/bin:$PATH"
+#alias g++ = 'g++ -std=c++11'
+#alias g++ = "/usr/local/bin/g++"
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="alanpeabody"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="agnoster"
+
 DEFAULT_USER="$USER"
 ## pwowerlevel9k
-# command line 左邊想顯示的內容
+# command line left
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir) # <= left prompt 設了 "dir"
-# command line 右邊想顯示的內容
+# command line right
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time) # <= right prompt 設了 "time"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -53,14 +59,20 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time) # <= right prompt 設了 "time"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip vi-mode history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git pip vi-mode history-substring-search zsh-autosuggestions zsh-syntax-highlighting branch)
+
+#setopt prompt_subst
+#. ~/git-prompt.sh
+#export RPROMPT=$'$(__git_ps1 "%s")'
+
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH=/Users/Mac/Library/Python/3.7/bin/:$PATH
 #export PATH=$PATH:/usr/java/jre1.8.0_131/bin
 #export PATH=$PATH:/usr/java/jdk1.8.0_131/bin
-
+#export PATH="/anaconda3/bin":$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -97,9 +109,30 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/Users/ujkuo/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/ujkuo/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/ujkuo/opt/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/ujkuo/opt/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #bindkey '^[[A' history-substring-search-up
 #bindkey '^[[B' history-substring-search-down
 #bindkey -M vicmd 'k' history-substring-search-up
 #bindkey -M vicmd 'j' history-substring-search-down
+[ -f "/Users/ujkuo/.ghcup/env" ] && source "/Users/ujkuo/.ghcup/env" # ghcup-env
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion"  ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
