@@ -7,10 +7,10 @@ change the "$git_name" and "$git_email" in install.sh
 cd ~
 mkdir Programfile
 cd ./Programfile
-git clone https://github.com/WildfootW/dotfiles.git
+git clone https://github.com/ujkuo/dotfiles.git
 cd ./dotfiles
 ./install.sh
-git remote set-url origin git@github.com:WildfootW/dotfiles.git
+git remote set-url origin git@github.com:ujkuo/dotfiles.git
 ```
 
 ### required
