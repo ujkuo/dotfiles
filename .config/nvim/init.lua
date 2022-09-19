@@ -3,6 +3,7 @@ require('craftzdog.highlights')
 require('craftzdog.maps')
 require('craftzdog.plugins')
 require('craftzdog.abbre')
+require('craftzdog.skeleton')
 
 local has = function(x)
       return vim.fn.has(x) == 1
